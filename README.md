@@ -1,3 +1,15 @@
+# vrfurry-bsky bluesky list
+
+This code is the logic behind the VR Furries list on Bluesky (bsky.app)
+[https://bsky.app/profile/did:plc:mkklr4smns2baynajhq3in6g/feed/vr-furries](https://bsky.app/profile/did:plc:mkklr4smns2baynajhq3in6g/feed/vr-furries)
+
+## Endpoints:
+- Feed skeleton: [https://vrfurry-bsky.oasislab.co.uk/xrpc/app.bsky.feed.getFeedSkeleton?feed=at://did:plc:mkklr4smns2baynajhq3in6g/app.bsky.feed.generator/vr-furries](https://vrfurry-bsky.oasislab.co.uk/xrpc/app.bsky.feed.getFeedSkeleton?feed=at://did:plc:mkklr4smns2baynajhq3in6g/app.bsky.feed.generator/vr-furries)
+- Describe feed generator: [https://vrfurry-bsky.oasislab.co.uk/xrpc/app.bsky.feed.describeFeedGenerator](https://vrfurry-bsky.oasislab.co.uk/xrpc/app.bsky.feed.describeFeedGenerator)
+- well-known/did.json: [https://vrfurry-bsky.oasislab.co.uk/.well-known/did.json](https://vrfurry-bsky.oasislab.co.uk/.well-known/did.json)
+
+---
+FORKED CONTENT:
 # ATProto Feed Generator
 
 This is a starter kit for creating ATProto Feed Generators. It's not feature complete, but should give you a good starting ground off of which to build and deploy a feed.
