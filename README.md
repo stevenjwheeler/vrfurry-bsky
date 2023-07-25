@@ -1,12 +1,25 @@
-# vrfurry-bsky bluesky list
+# vrfurry-bsky bluesky feed
+This code is the logic behind the VR Furries feeds on Bluesky (bsky.app). It serves both the "VR Furries" SFW feed, and "VR Furries NSFW" NSFW feed.
 
-This code is the logic behind the VR Furries list on Bluesky (bsky.app)
+## Bluesky Feeds:
+### VR Furries
 [https://bsky.app/profile/did:plc:mkklr4smns2baynajhq3in6g/feed/vr-furries](https://bsky.app/profile/did:plc:mkklr4smns2baynajhq3in6g/feed/vr-furries)
+### VR Furries NSFW
+[https://bsky.app/profile/did:plc:mkklr4smns2baynajhq3in6g/feed/vr-furries-nsfw](https://bsky.app/profile/did:plc:mkklr4smns2baynajhq3in6g/feed/vr-furries-nsfw)
 
 ## Endpoints:
-- Feed skeleton: [https://vrfurry-bsky.oasislab.co.uk/xrpc/app.bsky.feed.getFeedSkeleton?feed=at://did:plc:mkklr4smns2baynajhq3in6g/app.bsky.feed.generator/vr-furries](https://vrfurry-bsky.oasislab.co.uk/xrpc/app.bsky.feed.getFeedSkeleton?feed=at://did:plc:mkklr4smns2baynajhq3in6g/app.bsky.feed.generator/vr-furries)
+### Utility:
 - Describe feed generator: [https://vrfurry-bsky.oasislab.co.uk/xrpc/app.bsky.feed.describeFeedGenerator](https://vrfurry-bsky.oasislab.co.uk/xrpc/app.bsky.feed.describeFeedGenerator)
 - well-known/did.json: [https://vrfurry-bsky.oasislab.co.uk/.well-known/did.json](https://vrfurry-bsky.oasislab.co.uk/.well-known/did.json)
+### SFW list (VR Furries):
+- Feed skeleton: [https://vrfurry-bsky.oasislab.co.uk/xrpc/app.bsky.feed.getFeedSkeleton?feed=at://did:plc:mkklr4smns2baynajhq3in6g/app.bsky.feed.generator/vr-furries](https://vrfurry-bsky.oasislab.co.uk/xrpc/app.bsky.feed.getFeedSkeleton?feed=at://did:plc:mkklr4smns2baynajhq3in6g/app.bsky.feed.generator/vr-furries)
+### NSFW list (VR Furries NSFW):
+- Feed skeleton: [https://vrfurry-bsky.oasislab.co.uk/xrpc/app.bsky.feed.getFeedSkeleton?feed=at://did:plc:mkklr4smns2baynajhq3in6g/app.bsky.feed.generator/vr-furries-nsfw](https://vrfurry-bsky.oasislab.co.uk/xrpc/app.bsky.feed.getFeedSkeleton?feed=at://did:plc:mkklr4smns2baynajhq3in6g/app.bsky.feed.generator/vr-furries-nsfw)
+
+## How data storage and feed generation works:
+Any posts containing the word #vrfurry or #vrfurries that is received through the firehose is stored in the database in a minified format for rehydration by the Bluesky client. If the post also contains #nsfw, then the post is marked as NSFW in the database.
+
+Depending on whether the user is requesting the vr-furries or vr-furries-nsfw endpoint, the server will return a list of posts that match the requirement (nsfw = true or false).
 
 ---
 FORKED CONTENT:
