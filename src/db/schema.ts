@@ -9,6 +9,7 @@ export type Post = {
   replyParent: string | null
   replyRoot: string | null
   indexedAt: string
+  nsfw: string
 }
 
 export type SubState = {
