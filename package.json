@@ -7,7 +7,8 @@
   "author": "dholms <dtholmgren@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "publishFeed": "ts-node scripts/publishFeedGen.ts",
+    "publishFeed-SFW": "ts-node scripts/publishFeedGen-sfw.ts",
+    "publishFeed-NSFW": "ts-node scripts/publishFeedGen-nsfw.ts",
     "start": "ts-node src/index.ts",
     "build": "tsc"
   },

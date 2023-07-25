@@ -25,7 +25,7 @@ const run = async () => {
 
   // (Optional) A description of your feed
   // Ex: Top trending content from the whole network
-  const description = 'Posts tagged with #vrfurry or #vrfurries across bluesky'
+  const description = 'For the VR furs - this list collects all posts tagged with #vrfurry/#vrfurries. For NSFW posts, see VR Furries NSFW (https://bsky.app/profile/did:plc:mkklr4smns2baynajhq3in6g/feed/vr-furries-nsfw)'
 
   // (Optional) The path to an image to be used as your feed's avatar
   // Ex: ~/path/to/avatar.jpeg
