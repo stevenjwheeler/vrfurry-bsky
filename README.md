@@ -1,4 +1,4 @@
-# vrfurry-bsky bluesky feed
+# VR Furries bluesky feeds
 This code is the logic behind the VR Furries feeds on Bluesky (bsky.app). It serves both the "VR Furries" SFW feed, and "VR Furries NSFW" NSFW feed.
 
 There exists a NSFW feed so that the normal feed does not get clogged up with NSFW content, and you can't stop people posting NSFW content.
